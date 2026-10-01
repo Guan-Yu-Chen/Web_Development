@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="ip" placeholder="Use a space to separate">
+    <button onclick="add_name()">Add a name.</button>
+    <p><span id="length"></span> names in the table</p>
+    <table id="name_table"></table>
+    <input type="range" id="rg" min="0" max="100" step="1" value="50">
+    <p>Value: <span id="slidebar_num">50</span></p>
+</body>
+<script src="Baby_name_Short/Baby_name_Short.js"></script>
+<script>
+    function add_name_to_table(name) {
+        let txn = document.createTextNode(name);
+        let td = document.createElement("td");
+        td.addEventListener("copy", function () {
+            alert(this.innerHTML + " is copied!!")
+        })
+        let tr = document.createElement("tr");
+        td.appendChild(txn);
+        tr.appendChild(td);
+        tb.appendChild(tr);
+    }
+
+    let bb_names = Baby_Name_List.split(",");
+    let tb = document.getElementById("name_table");
+    let header = document.createTextNode("Names");
+    let th = document.createElement("th");
+    let tr = document.createElement("tr");
+    th.appendChild(header);
+    tr.appendChild(th);
+    tb.appendChild(tr);
+
+    for(i = 0; i < bb_names.length; i++) {
+        add_name_to_table(bb_names[i]);
+    }
+
+    tb.setAttribute("border", 1);
+    
+    function update_name_list_length() {
+        let len = document.getElementById("length");
+        len.innerHTML = bb_names.length;
+    }
+
+    update_name_list_length();
+
+    function add_name() {
+        let new_name = document.getElementById("ip");
+        let nm = new_name.value.split(" ");
+        if(nm.length == 2 && nm[0] != "" && nm[1] != "") {
+            add_name_to_table(nm[0]);
+            bb_names.push(nm[0]);
+            update_name_list_length();
+            new_name.value = "";
+        }
+        else {
+            alert("Wrong input");
+        }
+    }
+
+    let sb = document.getElementById("rg");
+    let sb_num = document.getElementById("slidebar_num");
+    sb.addEventListener("input", function () {
+        sb_num.innerHTML = this.value;
+    })
+</script>
+</html>

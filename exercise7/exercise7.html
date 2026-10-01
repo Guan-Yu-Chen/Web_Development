@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td {
+            padding: 2px;
+        }
+
+        #result, #input {
+            text-align: center;
+        }
+
+        .btn {
+            border: 1px solid black;
+            border-radius: 2px;
+            margin: auto;
+            width: 50px;
+            height: 20px;
+            text-align: center;
+            background-color: #EEEEEE;
+        }
+        .btn:hover {
+            cursor: pointer;
+            background-color: lightgray;
+        }
+
+        .check_result {
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th colspan="4">My Calculator</th>
+        </tr>
+        <tr>
+            <td>Result: </td>
+            <td colspan="3" id="result"></td>
+        </tr>
+        <tr>
+            <td>Input: </td>
+            <td colspan="3" id="input"></td>
+        </tr>
+        <tr>
+            <td><div class="btn" onclick="clear_all()">Clear</div></td>
+            <td><div class="btn" onclick="add_input('(')">(</div></td>
+            <td><div class="btn" onclick="add_input(')')">)</div></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><div class="btn" onclick="add_input('1')">1</div></td>
+            <td><div class="btn" onclick="add_input('2')">2</div></td>
+            <td><div class="btn" onclick="add_input('3')">3</div></td>
+            <td><div class="btn" onclick="add_input('+')">+</div></td>
+        </tr>
+        <tr>
+            <td><div class="btn" onclick="add_input('4')">4</div></td>
+            <td><div class="btn" onclick="add_input('5')">5</div></td>
+            <td><div class="btn" onclick="add_input('6')">6</div></td>
+            <td><div class="btn" onclick="add_input('-')">-</div></td>
+        </tr>
+        <tr>
+            <td><div class="btn" onclick="add_input('7')">7</div></td>
+            <td><div class="btn" onclick="add_input('8')">8</div></td>
+            <td><div class="btn" onclick="add_input('9')">9</div></td>
+            <td><div class="btn" onclick="add_input('*')">&times;</div></td>
+        </tr>
+        <tr>
+            <td><div class="btn" onclick="add_input('.')">.</div></td>
+            <td><div class="btn" onclick="add_input('0')">0</div></td>
+            <td><div class="btn" onclick="enter()">=</div></td>
+            <td><div class="btn" onclick="add_input('/')">&divide;</div></td>
+        </tr>
+        <tr>
+            <td colspan="4"><div class="btn check_result" onclick="check_result()">Check My Result</div></td>
+        </tr>
+    </table>
+</body>
+<script>
+    let input_text = document.getElementById("input");
+    let result_text = document.getElementById("result");
+    
+    function add_input(num) {
+        input_text.innerHTML += num;
+    }
+
+    function enter() {
+        result_text.innerHTML = eval(input_text.innerHTML);
+    }
+
+    function clear_all() {
+        result_text.innerHTML = '';
+        input_text.innerHTML = '';
+    }
+
+    function check_result() {
+        let number = parseFloat(result_text.innerHTML);
+        switch (true) {
+            case (number == 0):
+                result_text.innerHTML = "Zero";
+                break;
+            case (number < 0):
+                result_text.innerHTML = "Negative";
+                break;
+            case (number > 0 && number % 3 == 0):
+                result_text.innerHTML = "Positive(3)";
+                break;
+            case (number > 0):
+                result_text.innerHTML = "Positive";
+                break;
+            default:
+                result_text.innerHTML = "No result yet"
+        }
+    }
+</script>
+</html>

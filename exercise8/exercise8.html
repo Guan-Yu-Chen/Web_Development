@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .highlight {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<script src="Baby_name/Baby_name.js"></script>
+<body>
+    <select id="names_select"></select>
+    <button id="select_btn" onclick="build_pyramid_and_highlight()">Select</button>
+    <button id="lucky_btn" onclick="randomSelect()">I feel lucky!</button>
+    <button id="disco_btn" onclick="disco()">Let's Disco!</button>
+    <div id="now_time"></div>
+    <div id="name_pyramid"></div>
+</body>
+<script>
+    let names = Baby_Name_List.split(",");
+    let names_select = document.getElementById("names_select");
+    let ops = "";
+    for(i = 0; i < names.length; i++) {
+        let op = "<option value='" + i + "'>" + (i+1) + "." + names[i] + "</option>";
+        ops += op;       
+    }
+    names_select.innerHTML = ops;
+
+    function update_time() {
+        let now = document.getElementById("now_time");
+        let nt = new Date().toLocaleString();
+        now.innerHTML = nt;
+    }
+    
+    function build_pyramid_and_highlight() {
+        update_time();
+        let pyramid = document.getElementById("name_pyramid");
+        let hightlight_index = document.getElementById("names_select").value;
+        let p = "<table>";
+        let r = 1;
+        let c = 1;
+        for(i = 0; i < names.length; i++) {
+            if(c == 1) {
+                p += "<tr>";
+            }
+            if(c <= r) {
+                p += "<td";
+                if(i == hightlight_index) {
+                    p += " class='highlight'";
+                }
+                p += (">" + names[i] + "</td>");
+            }
+            if(c == r) {
+                p += "</tr>";
+                c = 1;
+                r += 1;
+                continue;
+            }
+            c += 1;
+        }
+        p += "</table>";
+        pyramid.innerHTML = p;
+    }
+
+    function randomSelect() {
+        update_time();
+        let ns = document.getElementById("names_select");
+        ns.value = Math.ceil(Math.random() * names.length);
+        build_pyramid_and_highlight();
+    }
+
+    let flag = 0;
+    let timeout;
+    function disco() {
+        update_time();
+        let d = document.getElementById("disco_btn");
+        if(flag == 0) {
+            randomSelect();
+            timeout = setInterval(randomSelect, 1000);
+            d.innerHTML = "Stop the music!";
+            flag = 1;
+        }
+        else {
+            clearInterval(timeout);
+            d.innerHTML = "Let's Disco!";
+            flag = 0;
+        }
+    }
+</script>
+</html>

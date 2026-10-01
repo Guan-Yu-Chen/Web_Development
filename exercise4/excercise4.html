@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .f1 {
+            background-color: #578FCA;
+        }
+        .f2 {
+            background-color: #A1E3F9;
+        }
+        .f3 {
+            background-color: #D1F8EF;
+        }
+        legend {
+            background-color: white;
+        }
+        input#name:focus {
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h1> My Dream House </h1>
+    <form method="post" action="http://httpbin.org/post">
+        <fieldset class="f1">
+            <legend>Location</legend>
+            <label>Zipcode: <input type="text" name="zipcode" size="5" pattern="\d{3}"></label><br><br>
+            <label>Address1: <input type="text" name="address1" size="50" maxlength="20" placeholder="Address longer than 20 characters, use the address 2"></label><br><br>
+            <label>Address2: <textarea name="address2" rows="5" cols="20"></textarea></label><br><br>
+        </fieldset>
+        <fieldset class="f2">
+            <legend>Preference</legend>
+            <label>Painting Color: <input type="color" name="painting_color" value="#0000ff"></label><br><br>
+            <label>Time you want to visit Open House: <input type="time" name="visit_time" min="10:00" max="16:00"></label><br><br>
+        </fieldset>
+        <fieldset class="f3">
+            <legend>Contact me</legend>
+            <label>Name: <input type="text" name="name" id="name" minlength="4" pattern="[a-z]{4,}"></label><br><br>
+            <label>Phone: <input type="text" name="phone" minlength="7" pattern="\d{7,}"></label><br><br>
+        </fieldset>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
