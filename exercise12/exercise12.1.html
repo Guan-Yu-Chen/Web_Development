@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        div {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            box-sizing: border-box;
+        }
+        @media (max-width: 400px) {
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        @media (min-width: 401px) and (max-width: 600px) {
+            img {
+                width: 50%;
+                height: auto;
+            }
+        }
+
+        @media (min-width: 601px) {
+            img {
+                width: 33%;
+                height: auto;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        <img src="nckulogo2014/ncku-logo2.jpg">
+        <img src="nckulogo2014/ncku-logo1.jpg">
+        <img src="nckulogo2014/ncku-title.jpg">
+    </div>
+</body>
+</html>

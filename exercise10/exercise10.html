@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script 
+        src="https://code.jquery.com/jquery-3.7.1.min.js" 
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
+        crossorigin="anonymous">
+    </script>
+</head>
+<body>
+    <img src="Media/ncku-logo1.jpg" width="200">
+    <a href="https://web.ncku.edu.tw/" target="_self">
+        <img src="https://web.ncku.edu.tw/var/file/0/1000/img/1215/ncku-logo2.jpg" width="200">
+    </a><br>
+    
+    <audio controls autoplay muted>
+        <source src="Media/Lucid_Dreamer.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio><br>
+    
+    <iframe width="640" height="360" 
+        src="https://www.youtube.com/embed/6V7oVQ05oSA" 
+        title="Audio Library 音樂庫 免費背景音樂下載 歌名: Lovable Clown Sit Com 作者: Sir Cubworth | Happy Music 開心音樂 | NCS Music" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin"></iframe><br>
+
+    <a href="mailto:H34121151@gs.ncku.edu.tw">Email me</a><br>
+    <a href="tel:062757575">Contact NCKU</a>
+
+    <p>My favorite sites:</p>
+    <ul>
+        <li>Youtube</li>
+        <li>Wikipedia</li>
+        <li>Amazon</li>
+        <li>Facebook</li>
+            <ol type="A">
+                <li>Instagram</li>
+                <li>WhatsApp</li>
+                <li>Oculus VR</li>
+            </ol>
+    </ul>
+
+    <table border="1">
+        <caption><b>Fruit Juice Drinks and Meals<b></b></caption>
+        <tr>
+           <td rowspan="2" colspan="2"></td> 
+           <th colspan="3">Fruit Juice Drinks</th> 
+        </tr>
+        <tr>
+            <th>Apple</th>
+            <th>Orange</th>
+            <th>Screwdriver</th>
+        </tr>
+        <tr>
+            <th rowspan="3">Meal</th>
+            <td>Breakfast</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Lunch</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Dinner</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+
+        </tr>
+        <tr>
+            <th colspan="2">Total</th>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+    </table>
+</body>
+<script>
+    $("iframe, audio").remove();
+    
+    $("ol li").text(function (_, t){
+        return t + " (Acquired by Facebook)";
+    });
+    
+    $("ol li").wrap("<a href='https://www.google.com/'></a>");
+
+    $("th").css("border", "1px dashed");
+
+    $("body img").hover(function () {
+        $("a img").toggle()
+    });
+
+    $("td").each(function() {
+        if($(this).text() == "1") {
+            $(this).css("background-color", "lightblue");
+        }
+    });
+
+    $("body img").click(function() {
+        const temp = $("<p>");
+        const a = $("a").eq(1);
+        const b = $("a").eq(2);
+        
+        a.before(temp);
+        b.after(a);
+        temp.replaceWith(b);
+
+        const h = $(this).css("height");
+        const w = $(this).css("width");
+        $(this).animate({"height": "600px"}, 300);
+        $(this).animate({"width": "600px"}, 300);
+        $(this).animate({"height": h}, 300);
+        $(this).animate({"width": w}, 300);
+    });
+
+
+            
+</script>
+</html>

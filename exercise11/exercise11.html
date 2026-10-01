@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/blitzer/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.min.js"></script>
+    <style>
+        .ui-menu {
+            width: 200px;
+        }
+        .ui-progressbar {
+            width: 300px;
+        }
+        .ui-slider {
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div id="tabs">
+        <ul>
+            <li>
+                <a href="#t1">Exercise 1</a><br><br>
+            </li>
+            <li>
+                <a href="#t2">Exercise 2</a><br><br>
+            </li>
+            <li>
+                <a href="#t3">Exercise 3</a><br><br>
+            </li>
+            <li>
+                <a href="#t4">Exercise 11</a><br><br>
+            </li>
+        </ul>
+        <div id="t1">
+            <iframe width="640" height="360" src="exercise1.html"></iframe>
+        </div>
+        <div id="t2">
+            <iframe width="640" height="360" src="exercise2.html"></iframe>
+        </div>
+        <div id="t3">
+            <iframe width="640" height="360" src="exercise3.html"></iframe>
+        </div>
+        <div id="t4">
+            <ul id="fav">
+                <li>My favorite sites:
+                    <ul>
+                        <li>Youtube</li>
+                        <li>Wikipedia</li>
+                        <li>Amazon</li>
+                        <li>Facebook
+                            <ul>
+                                <li>Instagram</li>
+                                <li>WhatsApp</li>
+                                <li>Oculus VR</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <br>
+            <input id="dt">
+            <p>你今天已經過了<span id="pgnum"></span>%</p>
+            <div id="pb"></div>
+            <br>
+            <p id="snum">51</p>
+            <br>
+            <div id="slider"></div>
+            <br>
+            <button id="btn">Feeling Lucky</button>
+            <div id="dlg"></div>
+        </div>
+    </div>
+    
+</body> 
+<script>
+    $('#fav').menu();
+    
+    $('#dt').datepicker({
+       dateFormat: 'yy-mm-dd (D)' 
+    });
+
+    function nowTimePercentage(){
+        var now = new Date();
+        var nHr = now.getHours();
+        var nMin = now.getMinutes();
+        var nSec = now.getSeconds();
+        
+        var p = (nHr * 3600 + nMin * 60 + nSec) / 86400;
+        return p;
+    }
+
+    $('#pgnum').text((Math.round(nowTimePercentage()*10000)/100).toFixed(2));
+    $('#pb').progressbar({
+        value: nowTimePercentage()*100, 
+        change: function() {
+            $('#pgnum').text((Math.round(nowTimePercentage()*10000)/100).toFixed(2));
+        }
+    })
+    var pgtimer = setInterval(function() {
+        $('#pb').progressbar('value', nowTimePercentage()*100)
+    }, 1000)
+
+    $('#slider').slider({
+        max: 49,
+        value: 25,
+        change: function() {
+            $('#snum').text($(this).slider('value')*2+1)
+        }
+    });
+
+    $('#tabs').tabs();
+
+    $('#dlg').dialog({
+        autoOpen: false,
+        modal: true
+    })
+
+    function roll() {
+        var a = Math.random();
+        var b = "";
+        if(a < 0.3){
+            b = "Very Lucky!";
+        }
+        else if(a < 0.7){
+            b = "Average";
+        }
+        else{
+            b = "Unlucky...";
+        }
+        return b;
+    }
+
+    $('#btn').click(function(){
+        $('#dlg').text(roll());
+        $('#dlg').dialog('open');
+    })
+</script>
+</html>
