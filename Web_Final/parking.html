@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking - Personal Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/parking.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <nav class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <button id="close-sidebar" class="icon-btn"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="personal.html"><i class="fa-solid fa-grip"></i> Personal</a></li>
+                <li><a href="weather.html"><i class="fa-solid fa-cloud-sun"></i> Weather</a></li>
+                <li><a href="schedule.html"><i class="fa-solid fa-calendar-days"></i> Schedule</a></li>
+                <li><a href="parking.html" class="active"><i class="fa-solid fa-square-parking"></i> Parking</a></li>
+                <li><a href="food.html"><i class="fa-solid fa-utensils"></i> Food Map</a></li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+            <header class="top-bar">
+                <button id="open-sidebar" class="icon-btn"><i class="fa-solid fa-bars"></i></button>
+                <div class="page-title">
+                    <h2>NCKU Parking Lot</h2>
+                </div>
+                <div class="date-time">
+                    <span id="clock">00:00</span>
+                </div>
+            </header>
+
+            <div class="parking-container">
+                <div class="map-view">
+                    <div class="map-layout" id="map-layout">
+                        <div class="map-wrapper" id="map-wrapper">
+                            <!-- SVG and markers will be injected here -->
+                        </div>
+                        <div class="legend-container">
+                            <div class="legend-item">
+                                <div class="legend-dot danger"></div>
+                                <span>0-10%</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-dot warning"></div>
+                                <span>10%-30%</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-dot success"></div>
+                                <span>30%-100%</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-dot unknown"></div>
+                                <span>Unknown</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar-panel">
+                    <div class="panel-controls">
+                        <div class="type-toggles">
+                            <button class="toggle-btn active" data-type="moto">
+                                <i class="fa-solid fa-motorcycle"></i> 機車
+                            </button>
+                            <button class="toggle-btn" data-type="car">
+                                <i class="fa-solid fa-car"></i> 汽車
+                            </button>
+                        </div>
+                        <button class="refresh-btn" id="refresh-btn" title="Refresh Data">
+                            <i class="fa-solid fa-rotate-right"></i>
+                        </button>
+                    </div>
+                    <div class="lot-list-container">
+                        <div class="lot-list" id="lot-list">
+                            <!-- List items will be injected here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/parking.js"></script>
+</body>
+
+</html>

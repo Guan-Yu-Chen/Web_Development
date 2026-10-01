@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather - Personal Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/weather.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <nav class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <button id="close-sidebar" class="icon-btn"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="personal.html"><i class="fa-solid fa-grip"></i> Personal</a></li>
+                <li><a href="weather.html" class="active"><i class="fa-solid fa-cloud-sun"></i> Weather</a></li>
+                <li><a href="schedule.html"><i class="fa-solid fa-calendar-days"></i> Schedule</a></li>
+                <li><a href="parking.html"><i class="fa-solid fa-square-parking"></i> Parking</a></li>
+                <li><a href="food.html"><i class="fa-solid fa-utensils"></i> Food Map</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-bar">
+                <button id="open-sidebar" class="icon-btn"><i class="fa-solid fa-bars"></i></button>
+                <div class="page-title">
+                    <h2>Weather Dashboard</h2>
+                </div>
+            </header>
+
+            <div class="content-area">
+                <div class="weather-container">
+
+                    <!-- Top Section -->
+                    <div class="weather-top">
+                        <!-- Left: Current -->
+                        <div class="current-panel">
+                            <div class="datetime-group">
+                                <div class="time-display" id="time-display">--:--</div>
+                                <div class="time-ampm" id="time-ampm" style="font-size: 2.5rem; margin-top: 65px;">
+                                </div>
+                                <div class="date-display" id="date-display">
+                                    <span>--.--</span>
+                                    <span>---</span>
+                                </div>
+                            </div>
+
+                            <div class="current-main">
+                                <div class="temp-group">
+                                    <div class="temp-display" id="temp-display">--°C</div>
+                                    <div class="location-display">台南市東區</div>
+                                </div>
+                                <!-- Right Side: Icon & Rain -->
+                                <div class="current-right-group">
+                                    <div class="condition-display">
+                                        <i class="fa-solid fa-cloud" id="current-icon"></i>
+                                    </div>
+                                    <div class="rain-chance">
+                                        <i class="fa-solid fa-umbrella"></i>
+                                        <span id="rain-chance">--%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right: 24h Chart -->
+                        <div class="chart-panel">
+                            <!-- Title Removed -->
+                            <div class="chart-wrapper" id="chart-wrapper">
+                                <!-- SVG Chart Injected Here -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bottom Section -->
+                    <div class="weekly-section">
+                        <div class="weekly-grid" id="weekly-grid">
+                            <!-- Skeleton -->
+                            <div class="day-column">
+                                <div class="day-header">--</div>
+                                <div class="day-cell"></div>
+                                <div class="day-cell"></div>
+                            </div>
+                            <div class="day-column">
+                                <div class="day-header">--</div>
+                                <div class="day-cell"></div>
+                                <div class="day-cell"></div>
+                            </div>
+                            <div class="day-column">
+                                <div class="day-header">--</div>
+                                <div class="day-cell"></div>
+                                <div class="day-cell"></div>
+                            </div>
+                            <div class="day-column">
+                                <div class="day-header">--</div>
+                                <div class="day-cell"></div>
+                                <div class="day-cell"></div>
+                            </div>
+                            <div class="day-column">
+                                <div class="day-header">--</div>
+                                <div class="day-cell"></div>
+                                <div class="day-cell"></div>
+                            </div>
+                            <div class="day-column">
+                                <div class="day-header">--</div>
+                                <div class="day-cell"></div>
+                                <div class="day-cell"></div>
+                            </div>
+                            <div class="day-column">
+                                <div class="day-header">--</div>
+                                <div class="day-cell"></div>
+                                <div class="day-cell"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/weather.js"></script>
+</body>
+
+</html>

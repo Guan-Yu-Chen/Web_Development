@@ -1,0 +1,491 @@
+{
+  "memo": "NCKU Food List (30 Items)",
+  "restaurants": [
+    {
+      "id": "1765217901",
+      "name": "勝利早點",
+      "category": "Breakfast",
+      "rating": 4.5,
+      "price_level": "$",
+      "tags": [
+        "早餐",
+        "蛋餅",
+        "宵夜"
+      ],
+      "distance": "5 min",
+      "website": "",
+      "note": "必點豬肉蛋餅、蔥餅",
+      "latitude": "",
+      "longitude": ""
+    },
+    {
+      "id": "1765217902",
+      "name": "文章牛肉湯",
+      "category": "Taiwanese",
+      "rating": 4.8,
+      "price_level": "$$",
+      "tags": [
+        "牛肉湯",
+        "台南必吃"
+      ],
+      "distance": "15 min",
+      "website": "",
+      "note": "排隊名店，湯頭鮮甜",
+      "latitude": "",
+      "longitude": ""
+    },
+    {
+      "id": "1765217903",
+      "name": "元味屋",
+      "category": "Japanese",
+      "rating": 4.2,
+      "price_level": "$$",
+      "tags": [
+        "日式",
+        "豬排",
+        "定食"
+      ],
+      "distance": "10 min",
+      "website": "",
+      "note": "高CP值厚切豬排",
+      "latitude": "",
+      "longitude": ""
+    },
+    {
+      "id": "1765217904",
+      "name": "庫肯花園",
+      "category": "Western",
+      "rating": 4.4,
+      "price_level": "$$$",
+      "tags": [
+        "義大利麵",
+        "約會"
+      ],
+      "distance": "8 min",
+      "website": "",
+      "note": "氣氛好，需訂位",
+      "latitude": "",
+      "longitude": ""
+    },
+    {
+      "id": "1765217905",
+      "name": "轉角餐廳",
+      "category": "Steak",
+      "rating": 4.6,
+      "price_level": "$$$$",
+      "tags": [
+        "牛排",
+        "高級"
+      ],
+      "distance": "8 min",
+      "website": "http://www.corner.com.tw/",
+      "note": "老牌西餐廳，慶生首選",
+      "latitude": "",
+      "longitude": ""
+    },
+    {
+      "id": "1765217906",
+      "name": "小茂屋",
+      "category": "Noodles",
+      "rating": 4,
+      "price_level": "$",
+      "tags": [
+        "鍋燒意麵",
+        "冰品"
+      ],
+      "distance": "5 min",
+      "website": "",
+      "note": "成大人的回憶，口味偏甜",
+      "latitude": "",
+      "longitude": ""
+    },
+    {
+      "id": "1765217907",
+      "name": "紅樓小館",
+      "category": "Chinese",
+      "rating": 4.1,
+      "price_level": "$",
+      "tags": [
+        "炒飯",
+        "育樂街"
+      ],
+      "distance": "6 min",
+      "website": "",
+      "note": "俗擱大碗，學生最愛",
+      "latitude": "",
+      "longitude": ""
+    },
+    {
+      "id": "1765217908",
+      "name": "老友小吃",
+      "category": "Chinese",
+      "rating": 4.3,
+      "price_level": "$$",
+      "tags": [
+        "水餃",
+        "麵食"
+      ],
+      "distance": "12 min",
+      "website": "",
+      "note": "眷村口味，滷味不錯",
+      "latitude": "",
+      "longitude": ""
+    },
+    {
+      "id": "1765217909",
+      "name": "饕公麻辣燙",
+      "category": "Hot Pot",
+      "rating": 4.2,
+      "price_level": "$$",
+      "tags": [
+        "麻辣燙",
+        "宵夜"
+      ],
+      "distance": "10 min",
+      "website": "",
+      "note": "湯頭夠味，營業到很晚",
+      "latitude": "",
+      "longitude": ""
+    },
+    {
+      "id": "1765217910",
+      "name": "黑工號嫩仙草",
+      "category": "Dessert",
+      "rating": 4.7,
+      "price_level": "$",
+      "tags": [
+        "甜點",
+        "仙草"
+      ],
+      "distance": "8 min",
+      "website": "",
+      "note": "配料豐富，芋圓好吃",
+      "latitude": "",
+      "longitude": ""
+    },
+    {
+      "id": "1765217911",
+      "name": "丹丹漢堡 (成功店)",
+      "category": "Fast Food",
+      "rating": 4.6,
+      "price_level": "$",
+      "tags": [
+        "速食",
+        "南霸天",
+        "麵線"
+      ],
+      "distance": "10 min",
+      "website": "",
+      "note": "必點9號餐",
+      "latitude": "",
+      "longitude": ""
+    },
+    {
+      "id": "1765217912",
+      "name": "鴻公公越南河粉",
+      "category": "Vietnamese",
+      "rating": 4.3,
+      "price_level": "$$",
+      "tags": [
+        "河粉",
+        "異國料理"
+      ],
+      "distance": "15 min",
+      "website": "",
+      "note": "酸辣口味很道地",
+      "latitude": "",
+      "longitude": ""
+    },
+    {
+      "id": "1765217913",
+      "name": "泰星球",
+      "category": "Thai",
+      "rating": 4.1,
+      "price_level": "$",
+      "tags": [
+        "泰式",
+        "簡餐"
+      ],
+      "distance": "6 min",
+      "website": "",
+      "note": "位於育樂街，平價泰式",
+      "latitude": "",
+      "longitude": ""
+    },
+    {
+      "id": "1765217914",
+      "name": "一點刈包",
+      "category": "Snack",
+      "rating": 4.4,
+      "price_level": "$",
+      "tags": [
+        "刈包",
+        "宵夜",
+        "蛋餅"
+      ],
+      "distance": "10 min",
+      "website": "",
+      "note": "成大宵夜名單，必加酸菜",
+      "latitude": "",
+      "longitude": ""
+    },
+    {
+      "id": "1765217915",
+      "name": "冰鄉",
+      "category": "Dessert",
+      "rating": 4.7,
+      "price_level": "$$",
+      "tags": [
+        "冰品",
+        "芒果冰",
+        "草莓冰"
+      ],
+      "distance": "15 min",
+      "website": "",
+      "note": "水果冰份量超大，季節限定",
+      "latitude": "",
+      "longitude": ""
+    },
+    {
+      "id": "1765217916",
+      "name": "佟記餡餅粥坊",
+      "category": "Chinese",
+      "rating": 4.2,
+      "price_level": "$$",
+      "tags": [
+        "餡餅",
+        "小米粥"
+      ],
+      "distance": "12 min",
+      "website": "",
+      "note": "北方麵食，蔥油餅好吃",
+      "latitude": "",
+      "longitude": ""
+    },
+    {
+      "id": "1765217917",
+      "name": "韓朝",
+      "category": "Korean",
+      "rating": 4.3,
+      "price_level": "$$",
+      "tags": [
+        "韓式",
+        "部隊鍋"
+      ],
+      "distance": "10 min",
+      "website": "",
+      "note": "小菜無限續，適合聚餐",
+      "latitude": "",
+      "longitude": ""
+    },
+    {
+      "id": "1765217918",
+      "name": "咖啡部屋",
+      "category": "Cafe",
+      "rating": 4,
+      "price_level": "$$",
+      "tags": [
+        "咖啡",
+        "簡餐",
+        "讀書"
+      ],
+      "distance": "5 min",
+      "website": "",
+      "note": "適合讀書，有插座",
+      "latitude": "",
+      "longitude": ""
+    },
+    {
+      "id": "1765217919",
+      "name": "靚咖哩",
+      "category": "Curry",
+      "rating": 4.2,
+      "price_level": "$$",
+      "tags": [
+        "咖哩",
+        "日式"
+      ],
+      "distance": "8 min",
+      "website": "",
+      "note": "濃郁系咖哩，可加飯",
+      "latitude": "",
+      "longitude": ""
+    },
+    {
+      "id": "1765217920",
+      "name": "豚骨家",
+      "category": "Ramen",
+      "rating": 4.5,
+      "price_level": "$$",
+      "tags": [
+        "拉麵",
+        "日式"
+      ],
+      "distance": "12 min",
+      "website": "",
+      "note": "濃厚豚骨湯頭，像在日本",
+      "latitude": "",
+      "longitude": ""
+    },
+    {
+      "id": "1765217921",
+      "name": "窄門咖啡",
+      "category": "Cafe",
+      "rating": 4.4,
+      "price_level": "$$",
+      "tags": [
+        "咖啡",
+        "老屋"
+      ],
+      "distance": "15 min",
+      "website": "",
+      "note": "入口很窄，孔廟對面",
+      "latitude": "",
+      "longitude": ""
+    },
+    {
+      "id": "1765217922",
+      "name": "矮仔成蝦仁飯",
+      "category": "Taiwanese",
+      "rating": 4.1,
+      "price_level": "$",
+      "tags": [
+        "小吃",
+        "蝦仁飯"
+      ],
+      "distance": "18 min",
+      "website": "",
+      "note": "百家好店，火燒蝦仁",
+      "latitude": "",
+      "longitude": ""
+    },
+    {
+      "id": "1765217923",
+      "name": "醇涎坊鍋燒意麵",
+      "category": "Noodles",
+      "rating": 4.6,
+      "price_level": "$",
+      "tags": [
+        "鍋燒意麵",
+        "保安路"
+      ],
+      "distance": "20 min",
+      "website": "",
+      "note": "湯頭偏甜，料多實在",
+      "latitude": "",
+      "longitude": ""
+    },
+    {
+      "id": "1765217924",
+      "name": "阿憨鹹粥",
+      "category": "Taiwanese",
+      "rating": 4.3,
+      "price_level": "$$",
+      "tags": [
+        "鹹粥",
+        "虱目魚"
+      ],
+      "distance": "15 min",
+      "website": "",
+      "note": "道地台南早餐，加油條",
+      "latitude": "",
+      "longitude": ""
+    },
+    {
+      "id": "1765217925",
+      "name": "阿江鱔魚意麵",
+      "category": "Taiwanese",
+      "rating": 4.2,
+      "price_level": "$$",
+      "tags": [
+        "鱔魚意麵",
+        "熱炒"
+      ],
+      "distance": "18 min",
+      "website": "",
+      "note": "乾炒鱔魚好吃，雖然貴",
+      "latitude": "",
+      "longitude": ""
+    },
+    {
+      "id": "1765217926",
+      "name": "府城騷烤家",
+      "category": "BBQ",
+      "rating": 4.4,
+      "price_level": "$$",
+      "tags": [
+        "燒烤",
+        "露天"
+      ],
+      "distance": "8 min",
+      "website": "",
+      "note": "後火車站，適合聚餐喝酒",
+      "latitude": "",
+      "longitude": ""
+    },
+    {
+      "id": "1765217927",
+      "name": "迷客夏 (成大店)",
+      "category": "Drink",
+      "rating": 4.8,
+      "price_level": "$",
+      "tags": [
+        "手搖飲",
+        "牛奶"
+      ],
+      "distance": "5 min",
+      "website": "",
+      "note": "必點芋頭鮮奶",
+      "latitude": "",
+      "longitude": ""
+    },
+    {
+      "id": "1765217928",
+      "name": "樂品屋",
+      "category": "Curry",
+      "rating": 4.1,
+      "price_level": "$$",
+      "tags": [
+        "咖哩",
+        "焗烤"
+      ],
+      "distance": "6 min",
+      "website": "",
+      "note": "加飯加醬免費，學生愛店",
+      "latitude": "",
+      "longitude": ""
+    },
+    {
+      "id": "1765217929",
+      "name": "長榮牛肉湯",
+      "category": "Taiwanese",
+      "rating": 4.3,
+      "price_level": "$$",
+      "tags": [
+        "牛肉湯",
+        "長榮路"
+      ],
+      "distance": "8 min",
+      "website": "",
+      "note": "就在學校旁邊，方便",
+      "latitude": "",
+      "longitude": ""
+    },
+    {
+      "id": "1765217930",
+      "name": "山記魚仔店",
+      "category": "Japanese",
+      "rating": 4.5,
+      "price_level": "$$",
+      "tags": [
+        "生魚片",
+        "魚湯"
+      ],
+      "distance": "15 min",
+      "website": "",
+      "note": "早餐吃魚湯，石斑魚肉",
+      "latitude": "",
+      "longitude": ""
+    }
+  ]
+}

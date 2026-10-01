@@ -1,0 +1,28 @@
+<svg width="1147" height="1028" viewBox="0 0 1147 1028" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        text {
+            fill: #4D4D4D;
+            font-family: 'Noto Serif TC', serif;
+            font-size: 40px;
+            font-weight: bold;
+            letter-spacing: 0em;
+            white-space: pre;
+        }
+    </style>
+    <path id="li-hsing" d="M498.528 37.4394L107.435 0L75.7454 187.821L490.026 222.764L498.528 37.4394Z" fill="#373737"/>
+    <path id="cheng-hsing" d="M898.895 77.3746L527.898 41.8073L517.077 224.012L891.939 237.74L898.895 77.3746Z" fill="#373737"/>
+    <path id="ching-yeh" d="M1147 101.71L937.541 81.7426L929.039 239.612L1140.04 247.1L1147 101.71Z" fill="#373737"/>
+    <path id="kuang-fu" d="M487.707 243.356L71.1078 207.164L0 606.518L466.065 647.701L487.707 243.356Z" fill="#373737"/>
+    <path id="cheng-kung" d="M889.621 260.827L516.304 247.1L494.663 650.197L868.752 668.916L889.621 260.827Z" fill="#373737"/>
+    <path id="tzu-chiang" d="M1136.95 270.187L926.72 262.699L905.079 672.036L1116.08 683.268L1136.95 270.187Z" fill="#373737"/>
+    <path id="sheng-li" d="M866.433 695.124L491.571 675.156L477.659 965.935L850.975 995.263L866.433 695.124Z" fill="#373737"/>
+    <path id="tung-ning" d="M1113.76 708.228L902.76 696.996L888.075 999.007L1097.53 1027.09L1113.76 708.228Z" fill="#373737"/>
+    <text xml:space="preserve"><tspan x="273" y="96">&#x529b;</tspan><tspan x="273" y="144">&#x884c;</tspan></text>
+    <text xml:space="preserve"><tspan x="692" y="136">&#x6210;&#10;</tspan><tspan x="692" y="184">&#x674f;</tspan></text>
+    <text xml:space="preserve"><tspan x="1021" y="156">&#x656c;</tspan><tspan x="1021" y="204">&#x696d;</tspan></text>
+    <text xml:space="preserve"><tspan x="233" y="411">&#x5149;</tspan><tspan x="233" y="459">&#x5fa9;</tspan></text>
+    <text xml:space="preserve"><tspan x="672" y="439">&#x6210;</tspan><tspan x="672" y="487">&#x529f;</tspan></text>
+    <text xml:space="preserve"><tspan x="1001" y="453">&#x81ea;</tspan><tspan x="1001" y="501">&#x5f37;</tspan></text>
+    <text xml:space="preserve"><tspan x="653" y="822">&#x52dd;</tspan><tspan x="653" y="870">&#x5229;</tspan></text>
+    <text xml:space="preserve"><tspan x="981" y="847">&#x6771;</tspan><tspan x="981" y="895">&#x5be7;</tspan></text>
+</svg>

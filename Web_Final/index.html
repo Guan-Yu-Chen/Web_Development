@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <nav class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <button id="close-sidebar" class="icon-btn"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="personal.html"><i class="fa-solid fa-grip"></i> Personal</a></li>
+                <li><a href="weather.html"><i class="fa-solid fa-cloud-sun"></i> Weather</a></li>
+                <li><a href="schedule.html"><i class="fa-solid fa-calendar-days"></i> Schedule</a></li>
+                <li><a href="parking.html"><i class="fa-solid fa-square-parking"></i> Parking</a></li>
+                <li><a href="food.html"><i class="fa-solid fa-utensils"></i> Food Map</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-bar">
+                <button id="open-sidebar" class="icon-btn"><i class="fa-solid fa-bars"></i></button>
+                <div class="date-time">
+                    <span id="clock">00:00</span>
+                    <span id="date">2023.11.12</span>
+                </div>
+            </header>
+
+            <div class="content-area home-content">
+                <h1>Welcome Back</h1>
+                <table class="quick-links-table">
+                    <tr>
+                        <td colspan="2">
+                            <a href="personal.html" class="card">
+                                <div class="card-icon-wrapper">
+                                    <img src="assets/icon_personal.svg" alt="Personal" class="custom-icon">
+                                </div>
+                                <h2>Personal Page</h2>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="parking.html" class="card mini">
+                                <img src="assets/icon_parking.svg" alt="Parking" class="custom-icon">
+                                <span>Parking</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="weather.html" class="card mini">
+                                <img src="assets/icon_weather.svg" alt="Weather" class="custom-icon">
+                                <span>Weather</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="schedule.html" class="card mini">
+                                <img src="assets/icon_schedule.svg" alt="Schedule" class="custom-icon">
+                                <span>Schedule</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="food.html" class="card mini">
+                                <img src="assets/icon_food.svg" alt="Food" class="custom-icon">
+                                <span>Food Map</span>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

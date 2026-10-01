@@ -1,0 +1,240 @@
+.content-area {
+    /* Remove padding and use margin on container for strict 5% control */
+    padding: 20px 0;
+    overflow-y: auto;
+    height: calc(100vh - 80px);
+}
+
+.weather-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* 5% spacing on each side = 90% width centered */
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+/* Top Section */
+.weather-top {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 30px;
+    height: 45vh;
+    min-height: 280px;
+    position: relative;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Left Panel: Current Weather */
+.current-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.datetime-group {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 0;
+}
+
+.time-display {
+    font-size: 8rem;
+    /* Even Larger */
+    font-weight: 300;
+    line-height: 1;
+    font-family: 'Outfit', sans-serif;
+    min-width: 220px;
+    letter-spacing: -2px;
+}
+
+.date-display {
+    font-size: 2.2rem;
+    /* Larger */
+    color: var(--text-secondary);
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: baseline;
+    line-height: 1.1;
+    min-width: 70px;
+    margin-top: 50px;
+}
+
+/* Current Main: Horizontal Layout */
+.current-main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    /* Increased gap for weather icon */
+    margin-top: -20px;
+    /* Reduce visual gap between top/bottom groups */
+}
+
+.temp-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.temp-display {
+    font-size: 6rem;
+    /* Smaller than before (was 7) */
+    font-weight: 200;
+    line-height: 1;
+}
+
+.location-display {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    margin-top: 5px;
+}
+
+.current-right-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.condition-display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.condition-icon {
+    font-size: 7rem;
+    /* Larger (was 6) */
+    color: white;
+    text-align: center;
+}
+
+.rain-chance {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 1.5rem;
+    color: var(--text-primary);
+}
+
+/* Right Panel: 24 Hour Chart */
+.chart-panel {
+    background-color: var(--card-bg);
+    border-radius: 30px;
+    border: 2px solid var(--border-color);
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+}
+
+.panel-title {
+    display: none;
+}
+
+.chart-wrapper {
+    flex: 1;
+    width: 100%;
+    position: relative;
+}
+
+/* Bottom Section: Weekly Forecast */
+.weekly-section {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 0;
+    margin-top: 5px;
+}
+
+.weekly-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0;
+    border: 2px solid var(--border-color);
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: var(--card-bg);
+    height: 100%;
+}
+
+.day-column {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid var(--border-color);
+    height: 100%;
+}
+
+.day-column:last-child {
+    border-right: none;
+}
+
+.day-header {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 2px solid var(--border-color);
+    background: rgba(255, 255, 255, 0.05);
+    font-size: 0.95rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+/* Horizontal Cell Layout */
+.day-cell {
+    flex: 1;
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.day-cell:last-child {
+    border-bottom: none;
+}
+
+.day-cell i.weather-icon-cell {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.day-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+}
+
+.temp-range {
+    font-size: 1rem;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.pop-display {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.9rem;
+    color: var(--text-primary);
+}
+
+.pop-display i {
+    font-size: 0.9rem;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
